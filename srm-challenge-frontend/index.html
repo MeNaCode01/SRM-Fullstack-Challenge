@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRM Full Stack Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Node Hierarchies Processor</h1>
+        <p>Enter an array of node strings in JSON format:</p>
+        <textarea id="jsonInput" rows="10" placeholder='[
+  "A->B", "A->C", "B->D", "C->E", "E->F",
+  "X->Y", "Y->Z", "Z->X",
+  "P->Q", "Q->R",
+  "G->H", "G->H", "G->I",
+  "hello", "1->2", "A->"
+]'></textarea>
+        <button id="submitBtn">Submit</button>
+
+        <div id="errorBox" class="error-box" style="display: none;"></div>
+
+        <h2>Result:</h2>
+        <pre id="resultOutput">Output will appear here...</pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
